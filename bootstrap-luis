@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  
+<!--NavBar-->
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-instagram"></i>
+        Instagram
+      </a>
+     
+    <div>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear-fill"></i>
+          </button>
+          <!-- Dropdown -->
+          <ul class="dropdown-menu dropdown-menu-end"> 
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+          </ul>
+        </div>
+        </a>
+      </div> 
+    </div>
+  </nav>
+
+  <!--Grid and Post-->  
+  <div class="d-flex justify-content-center">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3-gap-fill"></i></button> <!--Grid-->
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></i></button> <!--Post-->
+      </li>
+    </ul>
+  </div>
+  <div class="tab-content text-center" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+    <!--Grid de fotos -->
+
+          <!-- Primera fila -->
+          <div class="row row-cols-3 g-2">
+            <div class="col">
+              <img src="https://picsum.photos/id/1/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="https://picsum.photos/id/10/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="https://picsum.photos/id/20/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+          </div>
+          
+          <!-- Segunda fila -->
+          <div class="row row-cols-3 g-2">
+            <div class="col">
+              <img src="https://picsum.photos/id/26/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="https://picsum.photos/id/40/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="https://picsum.photos/id/58/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+          </div>
+          
+          <!-- Tercera fila -->
+          <div class="row row-cols-3 g-2">
+            <div class="col">
+              <img src="https://picsum.photos/id/61/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="https://picsum.photos/id/68/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col">
+              <img src="https://picsum.photos/id/77/1200/1200" class="img-thumbnail img-fluid">
+            </div>
+          </div>
+    </div>
+    <!--Post-->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="card-title"><i class="bi bi-bootstrap-fill"></i></i>  BOOTSTRAP</h4>
+                                <p class="card-subtitle text-muted">Luis Iannello</p>
+                            </div>
+                            <div>
+                                <i class="material-icons">more_vert</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://picsum.photos/id/1/1200/1200" class="card-img-top" alt="Post Image">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="primary-icons">
+                                <i class="material-icons">favorite_border</i>
+                                <i class="material-icons">chat_bubble_outline</i>
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div>
+                                <i class="material-icons">turned_in_not</i>
+                            </div>
+                        </div>
+                        <p class="card-text mt-3 text-start">Like by <strong>4geeks Academy, html, web and 100,000 others </strong></p>
+                        <p class="card-text text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corrupti odio omnis laboriosam perferendis earum repellendus et obcaecati molestiae esse modi voluptate illum ratione nostrum nemo nulla saepe eligendi voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                              <h4 class="card-title"><i class="bi bi-bootstrap-fill"></i></i>  BOOTSTRAP</h4>
+                              <p class="card-subtitle text-muted">Luis Iannello</p>
+                          </div>
+                          <div>
+                              <i class="material-icons">more_vert</i>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <img src="https://picsum.photos/id/10/1200/1200" class="card-img-top" alt="Post Image">
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                          <div class="primary-icons">
+                              <i class="material-icons">favorite_border</i>
+                              <i class="material-icons">chat_bubble_outline</i>
+                              <i class="fa fa-paper-plane-o"></i>
+                          </div>
+                          <div>
+                              <i class="material-icons">turned_in_not</i>
+                          </div>
+                      </div>
+                      <p class="card-text mt-3 text-start">Like by <strong>4geeks Academy, html, web and 100,000 others </strong></p>
+                      <p class="card-text text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corrupti odio omnis laboriosam perferendis earum repellendus et obcaecati molestiae esse modi voluptate illum ratione nostrum nemo nulla saepe eligendi voluptatibus.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="card-title"><i class="bi bi-bootstrap-fill"></i></i>  BOOTSTRAP</h4>
+                            <p class="card-subtitle text-muted">Luis Iannello</p>
+                        </div>
+                        <div>
+                            <i class="material-icons">more_vert</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <img src="https://picsum.photos/id/20/1200/1200" class="card-img-top" alt="Post Image">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="primary-icons">
+                            <i class="material-icons">favorite_border</i>
+                            <i class="material-icons">chat_bubble_outline</i>
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div>
+                            <i class="material-icons">turned_in_not</i>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3 text-start">Like by <strong>4geeks Academy, html, web and 100,000 others </strong></p>
+                    <p class="card-text text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corrupti odio omnis laboriosam perferendis earum repellendus et obcaecati molestiae esse modi voluptate illum ratione nostrum nemo nulla saepe eligendi voluptatibus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+  </div>
+</div>
+
+ <!--Modal-->
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <!--Caja de Caption-->
+       <div class="modal-body">
+         <div class="mb-3">
+           <label for="caption" class="form-label">Caption</label>
+           <textarea class="form-control" id="caption" rows="3"></textarea>
+         </div>
+       </div>
+       <!--Botones camara y ubicacion-->
+       <div class="d-flex justify-content">
+         <button type="button" class="btn btn-light me-2"><i class="bi bi-camera-fill"></i></button>
+         <button type="button" class="btn btn-light"><i class="bi bi-geo-alt-fill"></i></button>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-success">Publish</button>
+       </div>
+     </div>
+   </div>
+ </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+ </body>
+</html>
